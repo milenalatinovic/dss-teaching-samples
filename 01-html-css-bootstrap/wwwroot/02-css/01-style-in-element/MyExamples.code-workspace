@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../MyExamples"
+		},
+		{
+			"path": "../../03-bootstrap"
+		},
+		{
+			"path": "../../assets"
+		},
+		{
+			"path": "../../01-html"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../teaching-samples/teaching-samples"
+		}
+	],
+	"settings": {}
+}
