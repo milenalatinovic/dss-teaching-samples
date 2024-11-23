@@ -28,5 +28,16 @@ namespace project.Services
                 "sample-data/actors.json");;
             return new List<Actor>(result);
         }
+        
+        public async Task<Actor> GetActorById(long id)
+        {
+            await _messagingService.Add("ActorsService::Actor fetched, with id " + id);
+            Actor [] result = await _httpClient.GetFromJsonAsync<Actor[]>(
+                "sample-data/actors.json");
+            for (int i=0; i<result.Length; i++)
+                if(result [i].Id == id)
+                    return result [i];
+            return null;    
+        }
     }
 }

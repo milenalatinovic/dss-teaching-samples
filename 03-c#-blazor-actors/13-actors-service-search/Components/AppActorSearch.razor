@@ -5,7 +5,7 @@
 <div id="search-component">
     <h4><label for="searchBox">Actor Search</label></h4>
 
-    <input id="search-box" @bind-value="searchBox" @bind-value:event="oninput"/>
+    <input id="search-box" @bind-value="SearchBox" @bind-value:event="oninput"/>
 
     <ul class="search-result">
         @foreach(var actor in filteredActors){
@@ -25,7 +25,7 @@
     List<Actor> filteredActors = new List<Actor>();
 
 
-    string searchBox {
+    string SearchBox {
         get{
             return search;
         }

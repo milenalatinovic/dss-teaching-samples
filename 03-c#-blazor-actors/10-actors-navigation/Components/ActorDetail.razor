@@ -40,7 +40,6 @@
     private List<Actor> _actors;
     protected override async Task OnInitializedAsync()
     {
-        _actors = await _actorService.GetActors();
-        SelectedActor = _actors.First(x => x.Id == long.Parse( Id ) );
+        SelectedActor = await _actorService.GetActorById(long.Parse( Id));
     }
 }
