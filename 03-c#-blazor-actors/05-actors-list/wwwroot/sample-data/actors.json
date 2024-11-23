@@ -33,5 +33,12 @@
     "LastName": "Cruise",
     "DateOfBith": "1962-07-03",
     "CountryCode": "US"
+  },
+  {
+    "Id": 6,
+    "FirstName": "Jean",
+    "LastName": "Reno",
+    "DateOfBith": "1948-07-30",
+    "CountryCode": "FR"
   }
 ]

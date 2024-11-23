@@ -1,0 +1,14 @@
+@page "/actor-3-detail"
+
+<h1>Actor Mickey Mouse</h1>
+<ActorDetail SelectedActor=@Mickey></ActorDetail>
+
+@code
+{
+    Actor Mickey = new Actor(){
+        FirstName = "Mickey",
+        LastName = "Mouse",
+        DateOfBith = new DateTime (1928, 1, 2),
+        CountryCode = "USA"
+    };
+}
